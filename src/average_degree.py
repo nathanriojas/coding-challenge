@@ -1,3 +1,4 @@
+import os
 import json
 from datetime import *
 
@@ -120,8 +121,8 @@ def convert_time(st):
 def main():
     cd = os.getcwd()
     challenge_dir = os.path.split(cd)
-    finput = "\tweet_input\tweets.txt"
-    foutput = "\tweet_output\tweets.txt"
+    finput = "\\tweet_input\\tweets.txt"
+    foutput = "\\tweet_output\\output.txt"
     fin = challenge_dir[0]+finput
     fout = challenge_dir[0]+foutput
     with open(fin, 'r') as f:
@@ -167,5 +168,3 @@ def main():
         out_file.close()
 
 main()
-
-
